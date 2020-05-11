@@ -30,7 +30,6 @@
       </group>
       <group targetFramework=".NETStandard2.0">
         <dependency id="Microsoft.CSharp" version="4.5.0" />
-        <dependency id="Microsoft.Net.Http" version="2.2.29" />
         <dependency id="NLog" version="4.6.7" />
         <dependency id="Newtonsoft.Json" version="12.0.2" />
       </group>
