@@ -5,7 +5,7 @@ from typing import Optional, TYPE_CHECKING
 import json
 
 from cdm.enums import CdmObjectType
-from cdm.utilities import ResolveOptions, logger
+from cdm.utilities import ResolveOptions
 
 from cdm.enums import CdmLogCode
 from .cdm_object import CdmObject
@@ -77,7 +77,6 @@ class CdmArgumentDefinition(CdmObjectSimple):
     def validate(self) -> bool:
         if self.value is None:
             missing_fields = ['value']
-            logger.error(self.ctx, self._TAG, 'validate', self.at_corpus_path, CdmLogCode.ERR_VALDN_INTEGRITY_CHECK_FAILURE, self.at_corpus_path, ', '.join(map(lambda s: '\'' + s + '\'', missing_fields)))
             return False
         return True
 

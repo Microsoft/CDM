@@ -26,7 +26,7 @@ from .resolve_options import ResolveOptions
 from .symbol_set import SymbolSet
 from .trait_to_property_map import TraitToPropertyMap
 from .visit_callback import VisitCallback
-from .logging import logger
+from .logging.logger import default_logger as logger
 from .logging.logger import _LoggerScope
 from .logging import event_list
 from .storage_utils import StorageUtils
