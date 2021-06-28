@@ -18,7 +18,7 @@
     <apache.commonio.version>2.7</apache.commonio.version>
     <apache.httpcomponents.version>4.5.13</apache.httpcomponents.version>
     <apache.surefire.version>2.14</apache.surefire.version>
-    <fasterxml.jackson.version>2.12.1</fasterxml.jackson.version>
+    <fasterxml.jackson.version>2.12.3</fasterxml.jackson.version>
     <java.version>8</java.version>
     <microsoft.msal4j.version>1.10.1</microsoft.msal4j.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
