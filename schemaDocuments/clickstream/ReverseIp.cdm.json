@@ -1,0 +1,37 @@
+{
+	"$schema": "../schema.cdm.json",
+	"jsonSchemaSemanticVersion": "1.0.0",
+	"imports": [{
+		"corpusPath": "/foundations.cdm.json"
+	}],
+	"definitions": [{
+		"entityName": "ReverseIp",
+		"extendsEntity": "CdmEntity",
+		"description": "Reverse IP.",
+		"hasAttributes": [{
+				"name": "ripContinent",
+				"dataType": "continent"
+			},
+			{
+				"name": "ripCountry",
+				"dataType": "country"
+			},
+			{
+				"name": "ripRegion",
+				"dataType": "region"
+			},
+			{
+				"name": "ripStateProvince",
+				"dataType": "stateOrProvince"
+			},
+			{
+				"name": "ripCity",
+				"dataType": "city"
+			},
+			{
+				"name": "isBot",
+				"dataType": "boolean"
+			}
+		]
+	}]
+}

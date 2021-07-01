@@ -1,0 +1,54 @@
+{
+	"$schema": "../schema.cdm.json",
+	"jsonSchemaSemanticVersion": "1.0.0",
+	"imports": [{
+		"corpusPath": "/foundations.cdm.json"
+	}],
+	"definitions": [{
+		"entityName": "UserAgent",
+		"extendsEntity": "CdmEntity",
+		"description": "The user agent.",
+		"hasAttributes": [{
+				"name": "browserName",
+				"dataType": "string",
+				"description": "Browser name."
+			},
+			{
+				"name": "browserVersion",
+				"dataType": "string",
+				"appliedTraits": [
+					"means.measurement.version"
+				],
+				"description": "Browser version."
+			},
+			{
+				"name": "osName",
+				"dataType": "string",
+				"description": "Operating system name."
+			},
+			{
+				"name": "osVersion",
+				"dataType": "string",
+				"appliedTraits": [
+					"means.measurement.version"
+				],
+				"description": "Operating system version."
+			},
+			{
+				"name": "manufacturer",
+				"dataType": "string",
+				"description": "Device manufacturer."
+			},
+			{
+				"name": "device",
+				"dataType": "string",
+				"description": "Device."
+			},
+			{
+				"name": "platform",
+				"dataType": "string",
+				"description": "Platform."
+			}
+		]
+	}]
+}
